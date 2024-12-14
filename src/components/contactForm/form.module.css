@@ -1,0 +1,89 @@
+.label {
+  display: block;
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 4px;
+}
+.input {
+  height: 60px;
+  padding: 10px 20px;
+  width: 100%;
+  border-radius: 10px;
+  background-color: #fff;
+  color: #000;
+  font-size: 24px;
+  font-weight: 500;
+}
+.input.textarea {
+  height: 160px;
+}
+.formGoup {
+  display: flex;
+  flex-direction: column;
+}
+.input.upload {
+  cursor: pointer;
+  position: relative;
+  height: 80px;
+  padding: 0;
+}
+.input.upload input[type="file"] {
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+.form {
+  display: grid;
+  grid-template-areas: "a a" "b c" "d d" "e e" "f f" "g g";
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px 30px;
+  max-width: 1100px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (max-width: 1680px) {
+  .label {
+    font-size: 18px;
+  }
+  .input {
+    height: 50px;
+    padding: 10px 16px;
+    border-radius: 8px;
+    font-size: 18px;
+  }
+  .form {
+    gap: 16px 24px;
+    max-width: 970px;
+  }
+}
+@media screen and (max-width: 1370px) {
+  .label {
+    font-size: 15px;
+  }
+  .input {
+    height: 40px;
+    font-size: 15px;
+    border-radius: 5px;
+  }
+  .form {
+    max-width: 840px;
+    gap: 14px 16px;
+  }
+  .input.upload {
+    height: 50px;
+  }
+  .input.textarea {
+    height: 110px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .form {
+   grid-template-columns: 1fr;
+   grid-template-areas: "a" "b" "c" "d" "e" "f" "g";
+   gap: 10px;
+  }
+}
