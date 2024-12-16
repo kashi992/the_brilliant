@@ -22,11 +22,12 @@ app.post('/send-email', (req, res) => {
   });
 
   const mailOptions = {
-    from: email,
-    to: 'sohaibanwar5876@gmail.com', // Replace with the target email
+    from: process.env.EMAIL_USER, // Use your authenticated email
+    to: 'sohaibanwar5876@gmail.com', // The recipient email
     subject: `New Idea Submission from ${name}`,
     text: `Name: ${name}\nEmail: ${email}\nContact Number: ${contactNumber}\n\nIdea:\n${idea}`,
   };
+  
 
   transporter.sendMail(mailOptions, (error, info) => {
     if (error) {

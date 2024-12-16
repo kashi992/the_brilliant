@@ -68,12 +68,12 @@ const ContactForm = ({ targetSectionRef }) => {
                         <label className={styles.label}>Contact Number:</label>
                         <input
                             className={`border-[1px] ${errors.name ? "border-secondary-color" : "border-black"} ${styles.input}`}
-                            type="text"
+                            type="number"
                             {...register('contactNumber', {
                                 required: 'Contact number is required',
                                 pattern: {
-                                    value: /^\d{10}$/,
-                                    message: 'Contact number must be 10 digits',
+                                    value: /^\d{10,}$/,
+                                    message: 'Contact number must be digits',
                                 },
                             })}
                         />
