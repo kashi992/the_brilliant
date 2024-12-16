@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'Lazydog';
+    src: url('../fonts/LazydogRegular.eot');
+    src: url('../fonts/LazydogRegular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/LazydogRegular.woff2') format('woff2'),
+        url('../fonts/LazydogRegular.woff') format('woff'),
+        url('../fonts/LazydogRegular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

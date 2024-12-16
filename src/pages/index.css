@@ -1,17 +1,44 @@
-.burst-container {
-    position: relative;
-    width: 200px;
-    height: 200px;
-  }
+.borderB_Animate::after {
+  display: block;
+  content: "";
+  transform: scaleX(0);
+  transition: transform 0.3s ease-in-out;
+  transform-origin: 0% 50%;
+}
+.borderB_Animate:hover::after {
+  transform: scaleX(1);
+}
+.homePage {
+  position: relative;
+  z-index: 1;
+}
+.homePage::before {
+  content: "";
+  background-image: url("../assets/images/mainBg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-attachment: fixed;
+  background-position-y: 30%;
+}
 
-  .burst-text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    font-size: 24px;
-    font-weight: bold;
-    text-transform: uppercase;
-    text-align: center;
+@media screen and (max-width: 1680px) {
+  .homePage::before {
+    background-position-y: 22%;
+    background-size: 100% auto;
   }
+}
+@media screen and (max-width: 1198.99px) {
+  .homePage::before {
+    background-position-y: 0%;
+    background-size: contain;
+    background-color: #f3efee;
+  }
+}
