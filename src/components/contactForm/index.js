@@ -33,9 +33,9 @@ const ContactForm = ({ targetSectionRef }) => {
         }
       };
     return (
-        <section className='min-[1680px]:pt-[100px] min-[1370px]:pt-[80px] pt-[60px] min-[1680px]:pb-[260px] min-[1370px]:pb-[190px] md:pb-[140px] pb-[120px]'>
+        <section className='min-[1680px]:py-[100px] min-[1370px]:py-[80px] py-[60px]'>
             <div className="container">
-                <form ref={targetSectionRef} className={`bg-primary-color text-black shadow-lg rounded-[16px] min-[1680px]:p-[40px] min-[1370px]:p-[30px] md:py-[30px] md:px-[20px] py-[20px] px-[16px] ${styles.form}`} onSubmit={handleSubmit(onSubmit)}>
+                <form ref={targetSectionRef} className={`xl:shadow-2xl bg-primary-color text-black rounded-[16px] min-[1680px]:p-[40px] min-[1370px]:p-[30px] md:py-[30px] md:px-[20px] py-[20px] px-[16px] ${styles.form}`} onSubmit={handleSubmit(onSubmit)}>
                     <p className='text-center min-[1680px]:text-[30px] min-[1370px]:text-[22px] md:text-[18px] text-[16px] mb-2 font-normal' style={{ gridArea: "a" }}>To appear in the Sequel to The Brilliant Idea Machine. Please submit your idea here. The best ideas will make it into the next book</p>
 
                     <div className={styles.formGoup} style={{ gridArea: "b" }}>
