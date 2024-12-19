@@ -7,12 +7,14 @@ import Navbar from "./layout/navbar";
 function App() {
   return (
     <>
-    {/* <div className="bgImg">
+      {/* <div className="bgImg">
       <img src={bgImg} alt="" />
     </div> */}
-    <Navbar/>
+    <div className="min-h-screen flex flex-col">
+    <Navbar />
       <Routers />
-      <Footer/>
+      <Footer />
+    </div>
     </>
   );
 }

@@ -102,7 +102,7 @@ const Home = () => {
                         </li>
                     </ul>
                 </div>
-                <Link onClick={handleScroll} className='flex xl:absolute max-[1200px]:w-fit max-[1200px]:mx-auto bottom-[30px] right-0 justify-center items-center text-[#cde65a] min-[1680px]:text-[36px] min-[1370px]:text-[26px] text-[20px] uppercase min-[1680px]:py-[21px] py-[18px] min-[1680px]:px-[86px] px-[65px] bg-contain bg-no-repeat leading-none bg-center text-nowrap text-center font-normal' style={{ backgroundImage: `url(${img1})`, backgroundSize: '100% 100%' }}>
+                <Link onClick={handleScroll} className='flex xl:absolute max-[1200px]:w-fit max-[1200px]:mx-auto bottom-[30px] right-0 justify-center items-center text-white min-[1680px]:text-[36px] min-[1370px]:text-[26px] text-[20px] uppercase min-[1680px]:py-[21px] py-[18px] min-[1680px]:px-[86px] px-[65px] bg-contain bg-no-repeat leading-none bg-center text-nowrap text-center font-normal' style={{ backgroundImage: `url(${img1})`, backgroundSize: '100% 100%' }}>
                 Submit <br/>
                 your idea
                     </Link>
