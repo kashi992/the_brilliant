@@ -26,35 +26,26 @@ const Shop = () => {
             .catch((error) => console.error('Error fetching IP info:', error));
     }, []);
 
-    // Create a reference for the target section
-    const targetSectionRef = useRef(null);
-// Set initial opacity to 0 (hidden)
-useEffect(() => {
-    gsap.set(targetSectionRef.current, { opacity: 0 });
-}, []);
-
-// Scroll to the target section smoothly and fade it in
-const handleScroll = () => {
-    gsap.to(window, {
-        duration: 2,
-        scrollTo: { y: targetSectionRef.current, offsetY: 60 },
-        ease: 'power2.inOut',
-        onStart: () => {
-            // Fade in the target section
-            gsap.to(targetSectionRef.current, {
-                duration: 1,
-                opacity: 1,
-                ease: 'power2.inOut',
+   // Create a reference for the target section
+        const targetSectionRef = useRef(null);
+    
+        // Scroll to the target section smoothly
+        const handleScroll = () => {
+            gsap.to(window, {
+                duration: 2, // Duration of the animation in seconds
+                scrollTo: { y: targetSectionRef.current, offsetY: 60 },
+                ease: 'power2.inOut', // Easing function for smooth animation
             });
-        },
-    });
-};
+        };
 
     return (
         <section className='flex-1 min-[1680px]:py-[100px] min-[1370px]:py-[80px] py-[60px]'>
             <div className="container grid xl:grid-cols-2 xl:gap-8 gap-12">
-                <div className='flex flex-col gap-4'>
+                <div className='flex flex-col gap-4 xl:text-start text-center'>
                     <h2 className='min-[1680px]:text-[50px] min-[1370px]:text-[40px] text-[32px]'>The Brilliant Idea Machine</h2>
+                    <div className='h-[550px] xl:hidden md:my-4 my-2'>
+                    <img src={bookImg} alt="" className='drop-shadow-2xl w-full h-full object-contain' />
+                </div>
                     <ul className='flex flex-col gap-3'>
                         <li>
                             <p className='sf min-[1680px]:text-[24px] md:text-[18px] text-[16px] font-medium'>Thanks to her grandfather and his latest invention, 11-year-old Parker Fisher is about to discover a world of endless possibilities. The Brilliant Idea Machine brings forgotten ideas back to life...perfect for an inventor who wants to make the world a better place. And perfect for a girl with the craziest idea ever that can change the life of every kid. </p>
@@ -63,14 +54,14 @@ const handleScroll = () => {
                             <p className='sf min-[1680px]:text-[24px] md:text-[18px] text-[16px] font-medium'>Not everyone wants what's best though. Parker, her friends, and her grandfather must all work together to keep the town's mayor from making bad ideas a reality. And they have to do it while saving an important bird from going extinct. </p>
                         </li>
                     </ul>
-                    <Link onClick={handleScroll} className='min-[1680px]:text-[36px] text-[24px] font-bold min-[1370px]:mt-8 mt-4 mb-4 flex w-fit items-center gap-3 p-[30px] bg-no-repeat text-white' style={{ backgroundImage: `url(${bgImg})`, backgroundSize: "100% 100%" }}>Shop at <img src={arrow} alt="" className='w-[32px]' /></Link>
-                    <div ref={targetSectionRef} className="flex xl:w-[65%] md:w-[50%] items-center gap-6">
+                    <Link onClick={handleScroll} className='min-[1680px]:text-[36px] text-[24px] font-bold min-[1370px]:mt-8 mt-4 mb-4 flex w-fit items-center gap-3 p-[30px] bg-no-repeat text-white max-[1200px]:mx-auto' style={{ backgroundImage: `url(${bgImg})`, backgroundSize: "100% 100%" }}>Shop at <img src={arrow} alt="" className='w-[32px]' /></Link>
+                    <div ref={targetSectionRef} className="flex xl:w-[65%] md:w-[50%] items-center gap-6 max-[1200px]:mx-auto">
                         <Link to={link}><img src={logo1} alt="" /></Link>
                         <Link><img src={logo2} alt="" /></Link>
                         <Link to="https://inhousebookstore.com.au/collections/new-releases/products/the-brilliant-idea-machine" target='_blank'><img src={logo3} alt="" /></Link>
                     </div>
                 </div>
-                <div className='min-[1680px]:h-[790px] min-[1370px]:h-[500px] xl:h-[440px] h-[550px]'>
+                <div className='min-[1680px]:h-[790px] min-[1370px]:h-[500px] xl:h-[440px] h-[550px] xl:block hidden'>
                     <img src={bookImg} alt="" className='drop-shadow-2xl w-full h-full object-contain' />
                 </div>
             </div>
