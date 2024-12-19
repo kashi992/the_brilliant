@@ -6,10 +6,13 @@ const About = () => {
     <section className='min-[1680px]:py-[100px] min-[1370px]:py-[80px] py-[60px] flex-1'>
       <div className="container">
         <div className="min-[1370px]:max-w-[1276px] max-w-[1120px] w-full mx-auto bg-[#63A490] text-white min-[1370px]:px-[40px] md:px-[20px] px-3 pt-3 min-[1370px]:pb-[40px] md:pb-[20px] pb-3 relative sf min-[1370px]:text-[24px] md:text-[18px] text-[16px] leading-tight flex flex-col gap-4">
-          <ul className='min-[1370px]:max-w-[70%] xl:max-w-[75%] w-full flex flex-col min-[1370px]:gap-4 gap-2'>
+          <ul className='min-[1370px]:max-w-[70%] xl:max-w-[75%] w-full flex flex-col min-[1370px]:gap-4 gap-2 xl:text-start text-center'>
             <li>
               <h2 className='font-bold'>About the Author:</h2>
             </li>
+            <li className='xl:hidden h-[400px] my-2'>
+            <img src={img} alt="" className='h-full mx-auto' />
+          </li>
             <li>
               <p>
               Malcolm’s been a pioneering force in the digital space, with a career spanning three decades and three continents.. He was born in Surrey, England, to a British mother and a Jamaican father. This multicultural upbringing instilled a rich appreciation for storytelling and creativity, which would later become the foundation of his career.
@@ -31,7 +34,7 @@ const About = () => {
               </p>
             </li>
           </ul>
-          <div className='xl:absolute right-0 bottom-0 min-[1370px]:h-[580px] h-[400px]'>
+          <div className='xl:absolute xl:block hidden right-0 bottom-0 min-[1370px]:h-[580px] h-[400px]'>
             <img src={img} alt="" className='h-full mx-auto' />
           </div>
         </div>
