@@ -65,11 +65,11 @@
   align-items: start;
 }
 .heroWrap .heroInner .slideImg {
-  /* height: 720px; */
+  height: 720px;
   margin-left: auto;
   margin-right: auto;
   object-fit: contain;
-  /* padding-bottom: 20px; */
+  padding-bottom: 20px;
 }
 
 @media screen and (max-width: 1680px) {
@@ -91,9 +91,7 @@
 }
 
 @media screen and (max-width: 1600px) {
-  .heroWrap .heroInner .slideImg {
-    height: 400px;
-  }
+
 }
 @media screen and (max-width: 1370px) {
   .heroWrap .heroInner .slideImg {
