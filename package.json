@@ -1,5 +1,6 @@
 {
   "name": "the_brilliant",
+  "homepage": "http://parkerfisher.com/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
