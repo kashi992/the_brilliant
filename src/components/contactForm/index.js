@@ -97,7 +97,7 @@ const ContactForm = ({ targetSectionRef }) => {
                         </div>
                     </div>
 
-                    <button style={{ gridArea: "g" }} type="submit" className='bg-secondary-color min-[1680px]:h-[80px] min-[1370px]:h-[65px] h-[50px] text-primary-color rounded-[8px] mt-3 min-[1680px]:text-3xl min-[1370px]:text-2xl text-xl border-2 border-transparent hover:bg-black hover:border-black hover:text-white'>Submit</button>
+                    <button style={{ gridArea: "g" }} type="submit" className='bg-[#649d8c] min-[1680px]:h-[80px] min-[1370px]:h-[65px] h-[50px] text-primary-color rounded-[8px] mt-3 min-[1680px]:text-3xl min-[1370px]:text-2xl text-xl border-2 border-transparent hover:bg-black hover:border-black hover:text-white'>Submit</button>
                 </form>
             </div>
 
