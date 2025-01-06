@@ -1,0 +1,26 @@
+.aboutInner{
+    position: relative;
+    z-index: 1;
+}
+.aboutInner::before{
+    content: "";
+    background-image: url('../../assets/images/authorBg1.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+}
+@media (max-width: 1199.98px){
+    .aboutInner::before{
+        background-image: url('../../assets/images/authorBg.png');
+    }
+}
+@media (max-width: 991.98px){
+    .aboutInner::before{
+        background-size: auto;
+        background: #63a490;
+        border-radius: 8px;
+    }
+}

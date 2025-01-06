@@ -18,6 +18,9 @@ html {
 * {
   box-sizing: border-box;
 }
+.pf{
+  font-family: var(--primaryFont);
+}
 .sf{
   font-family: var(--secondaryFont);
 }

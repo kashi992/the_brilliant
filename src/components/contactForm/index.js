@@ -95,8 +95,7 @@ const ContactForm = ({ targetSectionRef }) => {
                             <input type="file" {...register('picture')} />
                             <img src={uploadIcon} alt="" className='h-[90%] absolute top-0 bottom-0 left-2/4 -translate-x-2/4 pointer-events-none' />
                         </div>
-                    </div>
-
+                    </div>                    
                     <button style={{ gridArea: "g" }} type="submit" className='bg-[#649d8c] min-[1680px]:h-[80px] min-[1370px]:h-[65px] h-[50px] text-primary-color rounded-[8px] mt-3 min-[1680px]:text-3xl min-[1370px]:text-2xl text-xl border-2 border-transparent hover:bg-black hover:border-black hover:text-white'>Submit</button>
                 </form>
             </div>
