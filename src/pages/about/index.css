@@ -18,9 +18,5 @@
     }
 }
 @media (max-width: 991.98px){
-    .aboutInner::before{
-        background-size: auto;
-        background: #63a490;
-        border-radius: 8px;
-    }
+
 }

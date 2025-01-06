@@ -7,7 +7,7 @@ const About = () => {
     <section className='min-[1680px]:py-[100px] min-[1370px]:py-[80px] py-[60px] flex-1'>
       <div className="container">
         <div className="min-[1680px]:max-w-[1450px] lg:max-w-[93%] w-full mx-auto bg-cover bg-no-repeat text-white min-[1680px]:text-[24px] min-[1370px]:text-[22px] md:text-[18px] text-[16px] leading-tight flex flex-col gap-4 aboutInner min-[1680px]:min-h-[750px]">
-          <ul className='min-[1680px]:max-w-[1020px] xl:max-w-[70%] w-full flex flex-col min-[1370px]:gap-5 gap-2 xl:text-start text-center min-[1370px]:py-[90px] lg:py-[70px] min-[1600px]:ps-[100px] lg:ps-[80px] lg:pe-[80px] md:p-[40px] p-5 sf min-h-full flex-1'>
+          <ul className='min-[1680px]:max-w-[1020px] xl:max-w-[70%] w-full flex flex-col min-[1370px]:gap-5 gap-2 xl:text-start text-center min-[1370px]:py-[90px] lg:py-[70px] min-[1600px]:ps-[100px] lg:ps-[80px] lg:pe-[80px] md:px-[50px] px-6 pt-[70px] pb-[120px] sf min-h-full flex-1'>
             <li>
               <h2 className='font-bold min-[1680px]:text-[36px] md:text-[30px] text-[24px] leading-tight pf'>About the Author:</h2>
             </li>

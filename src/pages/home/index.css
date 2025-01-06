@@ -60,9 +60,12 @@
   grid-template-columns: 500px 1fr 500px;
   align-items: start;
   flex: 1;
+  gap: 10px;
 }
+
 .heroWrap .heroInner .slick-track {
   align-items: start;
+  gap: 20px;
 }
 .heroWrap .heroInner .slideImg {
   height: 720px;
@@ -86,7 +89,6 @@
   }
   .heroWrap .heroInner {
     grid-template-columns: 400px 1fr 400px;
-    gap: 10px;
   }
 }
 
