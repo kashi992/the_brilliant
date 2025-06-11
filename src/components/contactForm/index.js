@@ -19,7 +19,7 @@ const ContactForm = ({ targetSectionRef }) => {
     // };
     const onSubmit = async (data) => {
         try {
-          await axios.post('http://localhost:5000/send-email', {
+          await axios.post('https://the-brilliant-backend-5nzu0lmei-kashi992s-projects.vercel.app/api/send-email', {
             name: data.name,
             email: data.email,
             contactNumber: data.contactNumber,
